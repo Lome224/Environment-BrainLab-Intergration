@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Verify research environment",
+      "type": "process",
+      "command": "/Users/salomezhang/.local/share/mamba/envs/brainlab-semantic/bin/python",
+      "args": ["${workspaceFolder}/scripts/verify_environment.py"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "Verify environment including CLAP",
+      "type": "process",
+      "command": "/Users/salomezhang/.local/share/mamba/envs/brainlab-semantic/bin/python",
+      "args": ["${workspaceFolder}/scripts/verify_environment.py", "--clap"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    }
+  ]
+}

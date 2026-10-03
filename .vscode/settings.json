@@ -1,0 +1,17 @@
+{
+  "python.defaultInterpreterPath": "/Users/salomezhang/.local/share/mamba/envs/brainlab-semantic/bin/python",
+  "python.terminal.activateEnvironment": false,
+  "terminal.integrated.env.osx": {
+    "PATH": "/Users/salomezhang/.local/share/mamba/envs/brainlab-semantic/bin:${env:PATH}",
+    "CONDA_PREFIX": "/Users/salomezhang/.local/share/mamba/envs/brainlab-semantic",
+    "CONDA_DEFAULT_ENV": "brainlab-semantic",
+    "HF_HOME": "${workspaceFolder}/.cache/huggingface",
+    "TORCH_HOME": "${workspaceFolder}/.cache/torch",
+    "MPLCONFIGDIR": "${workspaceFolder}/.cache/matplotlib",
+    "NUMBA_CACHE_DIR": "${workspaceFolder}/.cache/numba",
+    "PIP_CACHE_DIR": "${workspaceFolder}/work/pip-cache",
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "files.exclude": {"**/__pycache__": true, ".cache": true, "work": true},
+  "search.exclude": {".cache": true, "models": true, "runs": true, "work": true}
+}

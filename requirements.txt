@@ -1,0 +1,15 @@
+numpy==1.26.4
+torch==2.8.0
+torchaudio==2.8.0
+torchvision==0.23.0
+transformers==4.44.2
+laion-clap==1.1.7
+cma==4.5.0
+scipy
+pandas
+matplotlib
+soundfile
+librosa
+ipykernel
+jupyterlab
+pyyaml
