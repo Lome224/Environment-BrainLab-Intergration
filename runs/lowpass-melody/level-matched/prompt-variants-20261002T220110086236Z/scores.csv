@@ -1,0 +1,10 @@
+pair,cutoff_hz,positive_prompt,negative_prompt,positive_similarity,negative_similarity,difference
+bright-dark,400,A synthesized melody with a bright timbre.,A synthesized melody with a dark timbre.,0.47466880083084106,0.42498528957366943,0.04968351125717163
+bright-dark,1200,A synthesized melody with a bright timbre.,A synthesized melody with a dark timbre.,0.3849830627441406,0.3431835174560547,0.04179954528808594
+bright-dark,6000,A synthesized melody with a bright timbre.,A synthesized melody with a dark timbre.,0.3442166745662689,0.3027123212814331,0.041504353284835815
+sharp-muffled,400,A synthesized melody with a sharp tone.,A synthesized melody with a muffled tone.,0.4388071894645691,0.329318642616272,0.10948854684829712
+sharp-muffled,1200,A synthesized melody with a sharp tone.,A synthesized melody with a muffled tone.,0.36052238941192627,0.24809864163398743,0.11242374777793884
+sharp-muffled,6000,A synthesized melody with a sharp tone.,A synthesized melody with a muffled tone.,0.3275246024131775,0.17206138372421265,0.15546321868896484
+upper-harmonics,400,A synthesized melody with prominent upper harmonics.,A synthesized melody with subdued upper harmonics.,0.40122556686401367,0.40962833166122437,-0.008402764797210693
+upper-harmonics,1200,A synthesized melody with prominent upper harmonics.,A synthesized melody with subdued upper harmonics.,0.3115566670894623,0.3218885064125061,-0.010331839323043823
+upper-harmonics,6000,A synthesized melody with prominent upper harmonics.,A synthesized melody with subdued upper harmonics.,0.26061245799064636,0.2567809224128723,0.003831535577774048
