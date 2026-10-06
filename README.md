@@ -2,16 +2,6 @@
 
 Independent Python workspace for Salome's research on sparse, interpretable musical control.
 
-## Response-retrieval prototype
-
-The [method specification](docs/response-retrieval-method.md) defines a small experiment comparing ordinary edit retrieval, retrieval using measured local control responses, and local search without retrieval. It is an independent Csound mechanism pilot; its CLAP scores do not establish perceived musical success or research novelty.
-
-```sh
-python scripts/response_retrieval_pilot.py --queries query_a query_b --ablations
-```
-
-Results and selected audio are saved in a new timestamped folder under `runs/response-retrieval/`. The default budget is thirteen real renders per method per query; bank construction is recorded separately. The two ablations isolate response matching and edit transport. See [pilot findings](docs/response-retrieval-findings.md) for the first measured results.
-
 ## Setup status
 
 - Verified: Python 3.10.21, Csound rendering and WAV reading, CMA-ES optimization, and imports for CLAP, Transformers, librosa, and Jupyter.
@@ -47,41 +37,8 @@ The downloader respects this Mac's existing system proxy and uses standard HTTPS
 - `configs/`: future experiment settings
 - `notebooks/`: exploratory analysis
 - `models/`: downloaded model weights, excluded from Git
-- `runs/`: generated audio and experiment records, excluded from Git
+- `runs/`: original and selected audio with Csound sources, included in Git
 - `work/` and `.cache/`: temporary files and local caches, excluded from Git
-
-## Low-pass melody comparison
-
-Render the same 4.5-second melody (C4 E4 G4 A4 G4 E4 D4 C4) with a harmonically
-rich sawtooth and a low-pass filter inside the Csound instrument:
-
-```sh
-python scripts/render_lowpass_melody.py
-```
-
-The script saves individual WAVs, Csound logs, a copy of the
-instrument, and a JSON report under `runs/lowpass-melody/`; the generated files are
-excluded from Git. The three cutoffs are 400 Hz, 1,200 Hz, and 6,000 Hz. Lower cutoffs attenuate more
-upper harmonics and sound darker; higher cutoffs preserve more harmonics and
-sound brighter. Filtering can also change loudness. All renders keep the same
-score, envelope, oscillator level, and phase; no gain normalization is applied.
-
-The instrument is in `configs/lowpass-melody.csd`. It uses the band-limited
-[`vco2` sawtooth](https://csound.com/docs/manual/vco2.html) followed by the
-[`butterlp` second-order low-pass filter](https://csound.com/docs/manual/butterlp.html).
-To try other cutoffs:
-
-```sh
-python scripts/render_lowpass_melody.py --cutoffs 300 800 2500 8000 --output runs/lowpass-custom
-```
-
-To render a single setting directly with Csound (cutoff in Hz):
-
-```sh
-csound -d -m0 -W -s --omacro:CUTOFF=1200 -o runs/lowpass-melody/manual-1200Hz.wav configs/lowpass-melody.csd
-```
-
-This is a standalone listening demonstration in this workspace.
 
 ## Environment
 
