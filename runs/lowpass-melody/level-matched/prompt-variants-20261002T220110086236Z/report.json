@@ -1,0 +1,120 @@
+{
+  "created_utc": "2026-10-02T22:01:10.086857+00:00",
+  "seed": 42,
+  "device": "cpu",
+  "checkpoint": "music_audioset_epoch_15_esc_90.14.pt",
+  "input_sha256": {
+    "melody-cutoff-400Hz.wav": "b375583a4e8fb54a54d5f978e14fb10cc1a77373d22e98e39f929598e8aafb3d",
+    "melody-cutoff-1200Hz.wav": "3be982fd9f0ebc3e7a883b0716f76f72a22c43473f9eab6dcfc563709d8d6589",
+    "melody-cutoff-6000Hz.wav": "8529fb81ca0becb2603b4877aba34ee71ef84e540820cac124eecb2daf24c586"
+  },
+  "versions": {
+    "laion-clap": "1.1.7",
+    "torch": "2.8.0",
+    "transformers": "4.44.2",
+    "numpy": "1.26.4"
+  },
+  "original_prompt_check_max_absolute_error": 0.0,
+  "metric": "Positive-description cosine similarity minus negative-description cosine similarity",
+  "limitations": "Exploratory wording sensitivity on three clips; pairs express related but distinct concepts; no significance test.",
+  "ascending_rankings": {
+    "bright-dark": [
+      6000,
+      1200,
+      400
+    ],
+    "sharp-muffled": [
+      400,
+      1200,
+      6000
+    ],
+    "upper-harmonics": [
+      1200,
+      400,
+      6000
+    ]
+  },
+  "results": [
+    {
+      "pair": "bright-dark",
+      "cutoff_hz": 400,
+      "positive_prompt": "A synthesized melody with a bright timbre.",
+      "negative_prompt": "A synthesized melody with a dark timbre.",
+      "positive_similarity": 0.47466880083084106,
+      "negative_similarity": 0.42498528957366943,
+      "difference": 0.04968351125717163
+    },
+    {
+      "pair": "bright-dark",
+      "cutoff_hz": 1200,
+      "positive_prompt": "A synthesized melody with a bright timbre.",
+      "negative_prompt": "A synthesized melody with a dark timbre.",
+      "positive_similarity": 0.3849830627441406,
+      "negative_similarity": 0.3431835174560547,
+      "difference": 0.04179954528808594
+    },
+    {
+      "pair": "bright-dark",
+      "cutoff_hz": 6000,
+      "positive_prompt": "A synthesized melody with a bright timbre.",
+      "negative_prompt": "A synthesized melody with a dark timbre.",
+      "positive_similarity": 0.3442166745662689,
+      "negative_similarity": 0.3027123212814331,
+      "difference": 0.041504353284835815
+    },
+    {
+      "pair": "sharp-muffled",
+      "cutoff_hz": 400,
+      "positive_prompt": "A synthesized melody with a sharp tone.",
+      "negative_prompt": "A synthesized melody with a muffled tone.",
+      "positive_similarity": 0.4388071894645691,
+      "negative_similarity": 0.329318642616272,
+      "difference": 0.10948854684829712
+    },
+    {
+      "pair": "sharp-muffled",
+      "cutoff_hz": 1200,
+      "positive_prompt": "A synthesized melody with a sharp tone.",
+      "negative_prompt": "A synthesized melody with a muffled tone.",
+      "positive_similarity": 0.36052238941192627,
+      "negative_similarity": 0.24809864163398743,
+      "difference": 0.11242374777793884
+    },
+    {
+      "pair": "sharp-muffled",
+      "cutoff_hz": 6000,
+      "positive_prompt": "A synthesized melody with a sharp tone.",
+      "negative_prompt": "A synthesized melody with a muffled tone.",
+      "positive_similarity": 0.3275246024131775,
+      "negative_similarity": 0.17206138372421265,
+      "difference": 0.15546321868896484
+    },
+    {
+      "pair": "upper-harmonics",
+      "cutoff_hz": 400,
+      "positive_prompt": "A synthesized melody with prominent upper harmonics.",
+      "negative_prompt": "A synthesized melody with subdued upper harmonics.",
+      "positive_similarity": 0.40122556686401367,
+      "negative_similarity": 0.40962833166122437,
+      "difference": -0.008402764797210693
+    },
+    {
+      "pair": "upper-harmonics",
+      "cutoff_hz": 1200,
+      "positive_prompt": "A synthesized melody with prominent upper harmonics.",
+      "negative_prompt": "A synthesized melody with subdued upper harmonics.",
+      "positive_similarity": 0.3115566670894623,
+      "negative_similarity": 0.3218885064125061,
+      "difference": -0.010331839323043823
+    },
+    {
+      "pair": "upper-harmonics",
+      "cutoff_hz": 6000,
+      "positive_prompt": "A synthesized melody with prominent upper harmonics.",
+      "negative_prompt": "A synthesized melody with subdued upper harmonics.",
+      "positive_similarity": 0.26061245799064636,
+      "negative_similarity": 0.2567809224128723,
+      "difference": 0.003831535577774048
+    }
+  ]
+}

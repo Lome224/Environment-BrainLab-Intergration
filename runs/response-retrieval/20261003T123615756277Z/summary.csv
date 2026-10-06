@@ -1,0 +1,4 @@
+query,method,renders,initial_margin,final_margin,margin_gain,changed_controls,centroid_log_drift,accent_max_drift,preservation_pass,rejected_candidates,selected_audio
+query_a,ordinary_retrieval,13,-0.0032299458980560303,0.02025875449180603,0.02348870038986206,2,1.2496099733799734e-05,1.9754322383824796e-05,True,1,query_a/ordinary_retrieval/candidates/004.wav
+query_a,response_retrieval,13,-0.0032299458980560303,0.018923968076705933,0.022153913974761963,2,8.020197604541093e-05,1.7014383375146824e-05,True,0,query_a/response_retrieval/candidates/001.wav
+query_a,local_without_retrieval,13,-0.0032299458980560303,0.0276373028755188,0.03086724877357483,2,0.00020724838979880819,0.00011764871865416193,True,0,query_a/local_without_retrieval/candidates/000.wav

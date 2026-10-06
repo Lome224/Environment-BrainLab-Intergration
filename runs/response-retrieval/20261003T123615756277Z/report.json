@@ -1,0 +1,177 @@
+{
+  "seed": 42,
+  "queries": [
+    "query_a"
+  ],
+  "budget": 13,
+  "prompts": [
+    "A synthesized melody played with short, detached, clearly separated notes.",
+    "A synthesized melody played with sustained, smoothly connected notes."
+  ],
+  "baseline": [
+    0.55,
+    0.6,
+    0.25,
+    0.4
+  ],
+  "probe_step": 0.06,
+  "max_edit": 0.25,
+  "controls": [
+    "cutoff",
+    "gate",
+    "attack",
+    "release"
+  ],
+  "passages": {
+    "donor_a": {
+      "notes": [
+        60,
+        64,
+        67,
+        69,
+        67,
+        64,
+        62,
+        60
+      ],
+      "step": 0.4,
+      "accents": [
+        1,
+        0.65,
+        0.8,
+        0.65,
+        1,
+        0.65,
+        0.8,
+        0.65
+      ]
+    },
+    "donor_b": {
+      "notes": [
+        55,
+        62,
+        59,
+        65,
+        62,
+        57,
+        59,
+        55
+      ],
+      "step": 0.52,
+      "accents": [
+        1,
+        0.7,
+        0.7,
+        0.85,
+        1,
+        0.7,
+        0.7,
+        0.85
+      ]
+    },
+    "query_a": {
+      "notes": [
+        67,
+        65,
+        62,
+        69,
+        64,
+        67,
+        60,
+        62
+      ],
+      "step": 0.46,
+      "accents": [
+        1,
+        0.75,
+        0.6,
+        0.8,
+        1,
+        0.75,
+        0.6,
+        0.8
+      ]
+    },
+    "query_b": {
+      "notes": [
+        48,
+        55,
+        52,
+        57,
+        53,
+        50,
+        55,
+        48
+      ],
+      "step": 0.58,
+      "accents": [
+        1,
+        0.6,
+        0.85,
+        0.7,
+        1,
+        0.6,
+        0.85,
+        0.7
+      ]
+    }
+  },
+  "centroid_log_tolerance": 0.1,
+  "accent_max_tolerance": 0.08,
+  "semantic_scale": 0.05,
+  "ridge": 0.1,
+  "status": "complete",
+  "limitations": "Synthetic single-instrument mechanism pilot; CLAP proxy only; no human validation.",
+  "offline_renders": 42,
+  "total_renders": 81,
+  "results": [
+    {
+      "query": "query_a",
+      "method": "ordinary_retrieval",
+      "renders": 13,
+      "initial_margin": -0.0032299458980560303,
+      "final_margin": 0.02025875449180603,
+      "margin_gain": 0.02348870038986206,
+      "changed_controls": 2,
+      "centroid_log_drift": 1.2496099733799734e-05,
+      "accent_max_drift": 1.9754322383824796e-05,
+      "preservation_pass": true,
+      "rejected_candidates": 1,
+      "selected_audio": "query_a/ordinary_retrieval/candidates/004.wav"
+    },
+    {
+      "query": "query_a",
+      "method": "response_retrieval",
+      "renders": 13,
+      "initial_margin": -0.0032299458980560303,
+      "final_margin": 0.018923968076705933,
+      "margin_gain": 0.022153913974761963,
+      "changed_controls": 2,
+      "centroid_log_drift": 8.020197604541093e-05,
+      "accent_max_drift": 1.7014383375146824e-05,
+      "preservation_pass": true,
+      "rejected_candidates": 0,
+      "selected_audio": "query_a/response_retrieval/candidates/001.wav"
+    },
+    {
+      "query": "query_a",
+      "method": "local_without_retrieval",
+      "renders": 13,
+      "initial_margin": -0.0032299458980560303,
+      "final_margin": 0.0276373028755188,
+      "margin_gain": 0.03086724877357483,
+      "changed_controls": 2,
+      "centroid_log_drift": 0.00020724838979880819,
+      "accent_max_drift": 0.00011764871865416193,
+      "preservation_pass": true,
+      "rejected_candidates": 0,
+      "selected_audio": "query_a/local_without_retrieval/candidates/000.wav"
+    }
+  ],
+  "script_sha256": "dd0a7915b930e56f35c08a2cf17cb3d776651812170210e0472e818073cc7064",
+  "versions": {
+    "numpy": "1.26.4",
+    "torch": "2.8.0",
+    "laion-clap": "1.1.7"
+  }
+}

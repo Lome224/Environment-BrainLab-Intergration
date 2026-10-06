@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-10-02T21:33:05.823255+00:00",
+  "seed": 42,
+  "device": "cpu",
+  "checkpoint": "music_audioset_epoch_15_esc_90.14.pt",
+  "prompts": {
+    "bright": "A short synthesized melody with a bright, sharp timbre.",
+    "muffled": "A short synthesized melody with a dark, muffled timbre."
+  },
+  "metric": "Cosine similarity; brightness_preference = bright minus muffled",
+  "audio_processing": "Original WAVs passed to LAION CLAP file-list preprocessing; no added gain normalization",
+  "limitations": "Three-clip exploratory pilot; signal level varies with cutoff. Scores are not probabilities.",
+  "versions": {
+    "laion-clap": "1.1.7",
+    "torch": "2.8.0",
+    "transformers": "4.44.2",
+    "numpy": "1.26.4"
+  },
+  "results": [
+    {
+      "cutoff_hz": 400,
+      "filename": "melody-cutoff-400Hz.wav",
+      "duration_seconds": 4.5,
+      "rms": 0.06595729077014843,
+      "audio_sha256": "bdf1e2765a34fb29c0381f72c41f4321460b8c5d5a898201e3f4f223ddb8ebcc",
+      "bright_similarity": 0.4816112518310547,
+      "muffled_similarity": 0.3689442276954651,
+      "brightness_preference": 0.1126670241355896
+    },
+    {
+      "cutoff_hz": 1200,
+      "filename": "melody-cutoff-1200Hz.wav",
+      "duration_seconds": 4.5,
+      "rms": 0.08935480046381859,
+      "audio_sha256": "06c16c0861435982c23e135e6fb969fd761c0fa04d2ca85b8f43ee9c4dcbba5f",
+      "bright_similarity": 0.4062691330909729,
+      "muffled_similarity": 0.30339115858078003,
+      "brightness_preference": 0.10287797451019287
+    },
+    {
+      "cutoff_hz": 6000,
+      "filename": "melody-cutoff-6000Hz.wav",
+      "duration_seconds": 4.5,
+      "rms": 0.09705675380985322,
+      "audio_sha256": "96a9b5c434b80cc9ccb7b0c05b2be7eef64f7ae882ee20a13327e71701677e25",
+      "bright_similarity": 0.3682482838630676,
+      "muffled_similarity": 0.23504096269607544,
+      "brightness_preference": 0.1332073211669922
+    }
+  ]
+}

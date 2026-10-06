@@ -1,0 +1,16 @@
+rtaudio: PortAudio module enabled ...
+[musing callback interface
+[mrtmidi: PortMIDI module enabled
+[m--Csound version 6.18 (double samples) Nov 24 2022
+[commit: a1580f9cdf331c35dceb486f4231871ce0b00266]
+[mlibsndfile-1.1.0
+[msr = 48000.0,[m kr = 1500.000,[m ksmps = 32
+[m0dBFS level = 1.0,[m A4 tuning = 440.0
+[maudio buffered in 1024 sample-frame blocks
+[mwriting 2048-byte blks of shorts to /Users/salomezhang/Documents/Codex/brainlab-semantic/runs/environment-check/demo.wav (WAV)
+SECTION 1:
+[mScore finished in csoundPerform().
+end of score.		   overall amps:[m  0.18000
+	   overall samples out of range:[m        0[m
+0 errors in performance
+[m1024 2048 sample blks of shorts written to /Users/salomezhang/Documents/Codex/brainlab-semantic/runs/environment-check/demo.wav (WAV)
