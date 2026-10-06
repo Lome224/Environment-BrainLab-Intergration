@@ -2,6 +2,16 @@
 
 Independent Python workspace for Salome's research on sparse, interpretable musical control.
 
+## Response-retrieval prototype
+
+The [method specification](docs/response-retrieval-method.md) defines a small experiment comparing ordinary edit retrieval, retrieval using measured local control responses, and local search without retrieval. It is an independent Csound mechanism pilot; its CLAP scores do not establish perceived musical success or research novelty.
+
+```sh
+python scripts/response_retrieval_pilot.py --queries query_a query_b --ablations
+```
+
+Results and selected audio are saved in a new timestamped folder under `runs/response-retrieval/`. The default budget is thirteen real renders per method per query; bank construction is recorded separately. The two ablations isolate response matching and edit transport. See [pilot findings](docs/response-retrieval-findings.md) for the first measured results.
+
 ## Setup status
 
 - Verified: Python 3.10.21, Csound rendering and WAV reading, CMA-ES optimization, and imports for CLAP, Transformers, librosa, and Jupyter.
